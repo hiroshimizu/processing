@@ -10,6 +10,7 @@ if len(sys.argv) < 2:
     sys.exit()
 
 args = sys.argv
+beginning_tab_and_space = re.compile(r'^[\t, ]+')
 tab_and_space = re.compile(r'[\t, ]+')
 tsvfile_name = args[1]
 
@@ -25,7 +26,7 @@ csvfile_name = tsvfile_name.replace('.','_') + '.csv'
 csvfile = open(csvfile_name, "w", encoding="utf-8")
 r = tsvfile.readlines()
 for row in r:
-    csvfile.write(tab_and_space.sub(',',row))
+    csvfile.write(tab_and_space.sub(',',beginning_tab_and_space.sub('',row)))
     
 tsvfile.close()
 csvfile.close()

@@ -1,3 +1,8 @@
+"""
+    テキストファイルの内容をxlsxファイルのシートにコビーする
+    使い方：python3 copy_text_to_xlsx.py txtfile wb sheet
+    2019/01/10 Shimizu
+"""
 import openpyxl, sys
 
 if len(sys.argv) != 4:

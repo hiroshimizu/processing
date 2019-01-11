@@ -1,3 +1,9 @@
+"""
+    xlsxファイルのシートを別のブックのシートにコビーする
+    使い方：python3 copy_sheet.py wb1 sheet1 wb2 sheet2
+    ☆try-exceptのところ関数とかメソッドで書くべきだろ馬鹿　勉強不足
+    2019/01/10 Shimizu
+"""
 import openpyxl, sys
 
 if len(sys.argv) != 5:
