@@ -32,13 +32,13 @@ python3 CsvtoXlsx.py 000_ufm.csv
 python3 CsvtoXlsx.py sch_inp.csv
 ########################################################################3.
 echo 'get started to copy 000.dat to Landau.xlsx ...'
-python3 copy_sheet.py 000_dat.xlsx Sheet1 Landau_LE4_template.xlsx 000.dat
+python3 copy_sheet.py 000_dat.xlsx Sheet1 Landau_LE4_template_shimizu.xlsx 000.dat
 echo 'get started to copy 000.ufm to Landau.xlsx ...'
-python3 copy_sheet.py 000_ufm.xlsx Sheet1 Landau_LE4_template.xlsx 000.ufm
+python3 copy_sheet.py 000_ufm.xlsx Sheet1 Landau_LE4_template_shimizu.xlsx 000.ufm
 echo 'get started to copy sch.inp to Landau.xlsx ...'
-python3 copy_sheet.py sch_inp.xlsx Sheet1 Landau_LE4_template.xlsx sch.inp
+python3 copy_sheet.py sch_inp.xlsx Sheet1 Landau_LE4_template_shimizu.xlsx sch.inp
 echo 'get started to copy potential.cu to Landau.xlsx ...'
-python3 copy_text_to_xlsx.py potential.cu Landau_LE4_template.xlsx potential.cu
+python3 copy_text_to_xlsx.py potential.cu Landau_LE4_template_shimizu.xlsx potential.cu
 
 echo 'Coping has been completed.'
 ########################################################################4.
