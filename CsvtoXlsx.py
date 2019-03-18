@@ -25,6 +25,8 @@ else:
     pass
 
 xlsmfile_name = csvfile_name.replace('csv','xlsx')
+if len(sys.argv) == 3:
+    data = pd.concat([data.head(1), data[1:].astype(float)])
 
 # Excel形式で出力
 data.to_excel(xlsmfile_name, encoding='utf-8',index=False,header=False)

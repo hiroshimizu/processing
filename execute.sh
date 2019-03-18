@@ -27,8 +27,8 @@ sed -i "1 s/#    time/#____time/g" 000.ufm
 python3 TsvtoCsv.py 000.dat
 python3 TsvtoCsv.py 000.ufm
 python3 TsvtoCsv.py sch.inp
-python3 CsvtoXlsx.py 000_dat.csv
-python3 CsvtoXlsx.py 000_ufm.csv
+python3 CsvtoXlsx.py 000_dat.csv float
+python3 CsvtoXlsx.py 000_ufm.csv float
 python3 CsvtoXlsx.py sch_inp.csv
 ########################################################################3.
 echo 'get started to copy 000.dat to Landau.xlsx ...'
